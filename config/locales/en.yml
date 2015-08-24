@@ -1,0 +1,136 @@
+en:
+  scripts:
+    existing_application:
+      errors:
+        email:
+          email: "That email address format is not valid."
+          required: "Please enter your primary email address."
+    new_applicant:
+      errors:
+        first_name:
+          required: "Please enter your first name."
+        last_name:
+          required: "Please enter your last name."
+        email:
+          email: "Please enter a valid email address."
+          required: "Please enter your email address."
+          remote: "An application with this email already exists."
+
+  home:
+    existing_application_modal:
+      title: 'Already Started an Application?'
+      subhead: 'Enter your email address to find an existing application.'
+      email: "shopper@instacart.com"
+      submit: 'Find Your Application'
+      found_application: "Welcome Back %{first_name}!"
+      no_such_email_error: "Bummer! We couldn't find an application with that email address."
+    hero:
+      cta: "Fill Out The Form Below To Become An Instacart Shopper!"
+      headline: "Help Feed The World, and Get Paid Doing It!"
+      subhead: "Instacart is looking for new partners to shop for, and deliver groceries in cities all over the US."
+      existing_application: "Already have an application? Click here to check the status."
+    application_start_form:
+      first_name: "First Name"
+      last_name: "Last Name"
+      email: "Email"
+      submit: "Continue Your Shopper Application"
+      error: "Something went wrong! Please try again."
+    about:
+      headline: "What is Instacart?"
+      subhead: >
+        Instacart is a grocery delivery service that delivers in as little as an hour!
+        We're changing the way people think about their groceries. As a Personal Shopper, you'll
+        be up close and personal with our customers.
+      first_topic_heading: "Order Groceries, Right From Your Phone"
+      first_topic_body: >
+        The Instacart mobile app allows customers to browse and order groceries right from their phone.
+        Once a customer places an order, we assign a Personal Shopper, just like you, to pick the order.
+        From there, thanks to Personal Shoppers like you, we can deliver that order door to door, in an hour or less.
+      second_topic_heading: "Everything You Want, From Your Favorite Stores"
+      second_topic_body: >
+        If you've been to a grocery store recently, you've probably seen the big green Instacart refridgerators
+        up front, full of orders. Did you know that we've partnered up with Whole Foods, Costco, Safeway, Bi-Rite
+        and many more? We're always looking to expand our selection, and we need your help.
+      third_topic_heading: "15 Cities So Far. Even More On The Way"
+      third_topic_body: >
+        In addition to all the amazing stores we've partners with, Instacart is constantly looking to expand into
+        new cities and countries, all over the world. The grocery business in the US every year is about $700 billion.
+        Currently in 15 cities, we're always working to expand our footprint. That means plenty for you to earn!
+    how_it_works:
+      headline: "How Does Being A Personal Shopper Work?"
+      subhead: >
+        Choose your own hours & make up to $25 per hour shopping or delivering groceries.
+        Instacart Personal Shoppers set their own flexible schedules each week, as many or as few hours as you'd like.
+      first_topic_heading: "Receive orders on your phone"
+      first_topic_body: >
+        As a Personal Shopper, you'll be given access to a special version of the Instacart mobile app, which allows
+        you to be notifed as soon as a new order comes in. The app will walk you through every step of the process, and
+        provide assistance should you need it. All you need is your handy-dandy smartphone of choice, and you've ready to shop.
+      second_topic_heading: "Shop or deliver groceries"
+      second_topic_body: >
+        Don't have a car? No problem! Personal Shoppers are broken into two teams. The In-Store Shoppers, who work out
+        of a particular grocery store, and handle picking and assembling orders as they come in. Once an order is complete,
+        a second Personal Shopper with a car pick it up to do final delivery to the customer.
+      third_topic_heading: "Set Your Hours And Get Paid!"
+      third_topic_body: >
+        On Thursday of each week, you submit your availability. From there, we work will all the Personal Shoppers in your
+        region to develop a master schedule. Each week, you work the scheduled hours, plus any additional shifts you decide to
+        pick up. At the end of each week, we calculate how many hours you've worked, and pay you quickly and directly. It's too easy!
+    get_started:
+      headline: "Ready to Join The Instacart Team?"
+      subhead: "Fill out a short application to get started."
+      cta: "Click Here To Get Started!"
+
+  apply:
+    details:
+      header: "Additional Details"
+      form:
+        over_21: "Are you over 21?"
+        phone: "Phone Number"
+        phone_type: "Phone Type"
+        region: "Region"
+        submit: "Continue Application"
+        error: "Something went wrong! Please try again."
+
+    quiz:
+      header: 'Instacart Shopper Quiz'
+      subhead: >
+        Ready to test your shopper skills? Great! Take a quick quiz to see
+        how well you do at identifying a few common items you'll be asked to find
+        during your first shift.
+
+    background_check:
+      header: "Background Check"
+      agree_text: "I read have the above, and agree to the terms."
+      continue_button: 'Complete Shopper Application'
+      release: >
+        I hereby authorize and its designated agents and
+        representatives to conduct a comprehensive review of my background causing a consumer report
+        and/or an investigative consumer report to be generated for employment and/or volunteer purposes. I
+        understand that the scope of the consumer report/ investigative consumer report may include, but is not
+        limited to the following areas: verification of social security number; credit reports, current and previous
+        residences; employment history, education background, character references; drug testing, civil and
+        criminal history records from any criminal justice agency in any or all federal, state, county jurisdictions;
+        driving records, birth records, and any other public records.
+
+
+        I further authorize any individual, company, firm, corporation, or public agency to divulge any and all
+        information, verbal or written, pertaining to me, to or its
+        agents. I further authorize the complete release of any records or data pertaining to me which the
+        individual, company, firm, corporation, or public agency may have, to include information or data
+        received from other sources. and its designated agents
+        and representatives shall maintain all information received from this authorization in a confidential
+        manner in order to protect the applicants personal information, including, but not limited to, addresses,
+        social security numbers, and dates of birth.
+
+    confirmation:
+      header: "Your Application Has Been Submitted!"
+      status: "You application is currently %{state}."
+
+  application_steps:
+    get_started: "Start Application"
+    details: "Additional Details"
+    quiz: "Shopper Quiz"
+    background_check: "Background Check"
+    confirmation: "Confirmation"
+

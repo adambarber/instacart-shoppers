@@ -1,0 +1,23 @@
+
+.section-wrapper {
+  width: 100%;
+  margin: 0;
+
+  .section-inner {
+    margin: auto;
+    max-width: 960px;
+    padding: 3em 0;
+  }
+  .section-header {
+    border-bottom: 1px solid #f5f5f5;
+    padding: 0 0 .5em 0;
+    margin: 0 0 .5em 0;
+  }
+  .section-subhead {
+    border-bottom: 1px solid #f5f5f5;
+    padding: 0 0 1em 0;
+    margin: 0 0 0 0;
+  }
+}
+
+

@@ -1,0 +1,19 @@
+= form_for @applicant, url: { controller: :apply } do |f|
+  ul.form-inputs
+    li.input-group
+      i.fa.fa-warning
+      = f.label :first_name, t('home.application_start_form.first_name')
+      = f.text_field :first_name, placeholder: t('home.application_start_form.first_name')
+
+    li.input-group
+      i.fa.fa-warning
+      = f.label :last_name, t('home.application_start_form.last_name')
+      = f.text_field :last_name, placeholder: t('home.application_start_form.last_name')
+
+    li.input-group
+      i.fa.fa-warning
+      = f.label :email, t('home.application_start_form.email')
+      = f.text_field :email, placeholder: t('home.application_start_form.email'), type: 'email'
+
+    li.input-group.input-submit
+      = f.submit(t('home.application_start_form.submit'), class: 'button')

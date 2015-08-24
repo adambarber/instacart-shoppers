@@ -1,0 +1,24 @@
+.button  {
+  display: block;
+  background: #EA8349 !important;
+  border: 0px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 1px;
+  float: right;
+  padding: 1em;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+  &:hover {
+    background: darken(#EA8349, 10%);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  &.disabled {
+    background: lighten(#EA8349, 30%) !important;
+    cursor: not-allowed;
+    transition: all 0.2s;
+  }
+}

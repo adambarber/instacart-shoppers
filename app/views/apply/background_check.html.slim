@@ -1,0 +1,17 @@
+= render 'apply/application_steps'
+.background-check-wrapper.section-wrapper
+  .background-check-inner.section-inner
+
+    .page-header
+      h1= t('apply.background_check.header')
+
+    .legal-copy-wrapper
+      = simple_format t('apply.background_check.release')
+
+    .background-back-agree-wrapper
+      = label_tag 'background_check_agree' do
+        = check_box_tag 'background_check_agree'
+        = t('apply.background_check.agree_text')
+
+    .background-check-continue-button
+      = link_to t('apply.background_check.continue_button'), confirmation_apply_index_path, class: 'button disabled'

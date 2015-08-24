@@ -1,0 +1,17 @@
+= render 'apply/application_steps'
+.quiz-wrapper.section-wrapper
+  .quiz-inner.section-inner
+
+    .page-header
+      h1= t('apply.quiz.header')
+    .welcome-text
+      p= t('apply.quiz.subhead')
+
+    = react_component('QuizWidget', {}, { prerender: true })
+
+javascript:
+  window.updateApplicationStateUrl = "#{save_quiz_apply_index_path}"
+  window.currentApplicationID = "#{@applicant.id}"
+  window.continueApplicationLink = "#{background_check_apply_index_path}"
+
+

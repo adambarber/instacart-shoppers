@@ -1,0 +1,27 @@
+= render 'apply/application_steps'
+.details-wrapper.section-wrapper
+  .details-inner.section-inner
+    .page-header
+      h1= t('apply.details.header')
+    .form-wrapper
+      = form_for @applicant, url: { controller: :apply, action: 'update', id: @applicant }, method: :put do |f|
+        ul.form-inputs
+          li.input-group
+            = f.label :over_21, t('apply.details.form.over_21')
+            = f.check_box :over_21
+          li.input-group
+            i.fa.fa-warning
+
+            = f.label :phone, t('apply.details.form.phone')
+            = f.text_field :phone, placeholder: t('apply.details.form.phone')
+          li.input-group
+            i.fa.fa-warning
+            = f.label :phone_type, t('apply.details.form.phone_type')
+            = f.select :phone_type, Applicant::PHONE_TYPES, include_blank: true
+          li.input-group
+            i.fa.fa-warning
+            = f.label :region, t('apply.details.form.region')
+            = f.select :region, Applicant::REGIONS, include_blank: true
+
+          li.input-group.input-submit
+            = f.submit(t('apply.details.form.submit'), class: 'button')

@@ -1,0 +1,10 @@
+= render 'apply/application_steps'
+.confirmation-wrapper.section-wrapper
+  .confirmation-inner.section-inner
+
+    .page-header
+      h1= t('apply.confirmation.header')
+
+    .page-content
+      = t('apply.confirmation.status', state: @applicant.workflow_state)
+

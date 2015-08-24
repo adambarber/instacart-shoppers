@@ -1,0 +1,14 @@
+.existing-application-modal-overlay
+.existing-application-modal
+  .existing-application-inner
+    h3= t('home.existing_application_modal.title')
+    span= t('home.existing_application_modal.subhead')
+
+    .close
+      i.fa.fa-close
+
+    = form_tag find_existing_apply_index_path, id: 'existing_application_form' do
+      .input-wrapper
+        i.fa.fa-warning
+        = text_field_tag 'email', nil, type: :email, placeholder: t('home.existing_application_modal.email')
+      = submit_tag t('home.existing_application_modal.submit'), class: 'button disabled'

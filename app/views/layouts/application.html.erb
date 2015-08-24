@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Instacart Shoppers</title>
+
+  <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700', media: 'all' %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<header>
+
+  <%= link_to root_path, { class: 'logo' } do %>
+    <h1 >
+      <%= image_tag('instacart-logo.png') %>
+    </h1>
+  <% end %>
+
+
+</header>
+
+<%= render('shared/flash_notices') %>
+<div class='content-wrapper'>
+  <div class='content-wrapper-inner'>
+    <%= yield %>
+  </div>
+</div>
+
+<%= render('shared/footer') %>
+
+</body>
+</html>

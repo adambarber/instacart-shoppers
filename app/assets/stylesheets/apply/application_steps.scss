@@ -1,0 +1,28 @@
+.application-steps-wrapper {
+  background: #eee;
+  .application-steps-inner {
+    margin: auto;
+    padding: 1em 0;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      &:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+      li {
+        float: left;
+        width: 20%;
+        text-align: center;
+        color: #ccc;
+        &.current-step {
+          font-weight: 900;
+          color: #60ab59
+        }
+      }
+    }
+  }
+}

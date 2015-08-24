@@ -1,0 +1,9 @@
+.home-headline-wrapper.section-wrapper
+  .home-headline-inner.section-inner
+    h1= t('home.hero.headline')
+    h2= t('home.hero.subhead')
+
+    .hero-form-wrapper
+      h3= t('home.hero.cta')
+      = render "home/start_signup_form"
+      h6.existing-application= t('home.hero.existing_application')

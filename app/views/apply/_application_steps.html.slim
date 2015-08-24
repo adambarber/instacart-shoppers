@@ -1,0 +1,13 @@
+.application-steps-wrapper.section-wrapper
+  .application-steps-inner.section-inner
+    ul.application-steps
+      li.application-step
+        = t('application_steps.get_started')
+      li.application-step class=(('current-step' if @current_step == :details))
+        = t('application_steps.details')
+      li.application-step class=(('current-step' if @current_step == :quiz))
+        = t('application_steps.quiz')
+      li.application-step class=(('current-step' if @current_step == :background_check))
+        = t('application_steps.background_check')
+      li.application-step class=(('current-step' if @current_step == :confirmation))
+        = t('application_steps.confirmation')

@@ -1,0 +1,21 @@
+- unless flash.empty?
+  .flash-messages-wrapper
+    .flash-messages-inner
+      - flash.each do |f|
+        - if f[1].is_a?(Array)
+          - f[1].each do |message|
+            .message-wrapper class=(f[0])
+              .message-inner
+                - if f[0] == 'error'
+                  i.fa.fa-warning
+                - else
+                  i.fa.fa-bullhorn
+                span= message
+        - else
+          .message-wrapper class=(f[0])
+            .message-inner
+              - if f[0] == 'error'
+                i.fa.fa-warning
+              - else
+                i.fa.fa-bullhorn
+              span= f[1]
