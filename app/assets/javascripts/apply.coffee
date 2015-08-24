@@ -3,10 +3,11 @@ $ ->
     rules:
       'applicant[phone]':
         required: true
-        'remote':
-          'url': '/validations/phone'
-          'data':
-            'value': ->
+        remote:
+          url: '/validations/phone'
+          data:
+            applicant_id: window.applicant_id
+            value: ->
               return $('#applicant_phone').val()
       'applicant[phone_type]': 'required'
       'applicant[region]': 'required'
