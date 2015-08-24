@@ -1,9 +1,12 @@
 .quiz-wrapper {
   margin: 0 0 3em 0;
-  &:after {
-    content: '';
-    display: table;
-    clear: both;
+
+  .quiz-inner {
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
   }
 }
 .level-items {
