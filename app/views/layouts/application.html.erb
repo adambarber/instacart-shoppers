@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Instacart Shoppers</title>
+  <title>
+    <%= content_for?(:title) ? "#{content_for(:title)} | Instacart Shoppers" : "Instacart Shoppers" %>
+  </title>
 
   <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700', media: 'all' %>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
