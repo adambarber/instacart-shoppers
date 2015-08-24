@@ -14,7 +14,9 @@ class CreateApplicants < ActiveRecord::Migration
 
       t.timestamps null: false
     end
-    add_index :applicants, :email
+    add_index :applicants, :email, unique: true
+    add_index :applicants, :phone, unique: true
+    add_index :applicants, :created_at
     add_index :applicants, :workflow_state
   end
 end
